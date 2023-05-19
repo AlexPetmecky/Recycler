@@ -169,15 +169,7 @@ public class InventoryListeners implements Listener {
                 System.out.println("ITEM BEING SEARCHED: "+item);
 
                 ArrayList<WeightedNode> recipeNodeList= HyperAPI.getTargets(item.toLowerCase());
-                //System.out.println("Size of recipeNodeList: "+ recipeNodeList.size());
-                //recipeNode List contains a list of recipe nodes (All the ways to craft the item)
 
-
-                //event.getDestination().removeItem(event.getItem());
-                //event.getItem().setAmount(-1);
-                //event.getSource().removeItem(event.getItem());
-                ///////////////////////
-                //delete the given item
                 plugin.getServer().getScheduler().runTaskLater(plugin, new Runnable() {
 
                     public void run() {
